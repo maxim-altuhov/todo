@@ -1,0 +1,20 @@
+a.button {
+	display: block;
+	background-color: #4395d7;
+	color: #fff;
+	padding: 15px;
+	border-radius: 20px;
+	font-size: 13px;
+	font-weight: 700;
+	text-transform: uppercase;
+	cursor: pointer;
+
+	@media (max-width: 991px) {
+		font-size: 12px;
+	}
+
+	&:hover {
+		color: #fff;
+		background-color: #4395d7;
+	}
+}

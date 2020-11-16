@@ -1,0 +1,92 @@
+$font-family: "RobotoSlab",
+sans-serif;
+
+body {
+	font-family: $font-family;
+	background: rgba(253, 187, 45, 1);
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	outline: none;
+}
+
+input,
+button,
+textarea {
+	font-family: $font-family;
+}
+
+input,
+textarea {
+	&::-webkit-input-placeholder {
+		color: #758681;
+		transition: color 0.3s linear;
+	}
+}
+
+input,
+textarea {
+	&:focus::-webkit-input-placeholder {
+		color: transparent;
+	}
+}
+
+/* Firefox < 19 */
+input,
+textarea {
+	&:-moz-placeholder {
+		color: #758681;
+	}
+}
+
+input,
+textarea {
+	&:focus:-moz-placeholder {
+		color: transparent;
+	}
+}
+
+/* Firefox > 19 */
+input,
+textarea {
+	&::-moz-placeholder {
+		color: #758681;
+	}
+}
+
+input,
+textarea {
+	&:focus::-moz-placeholder {
+		color: transparent;
+	}
+}
+
+/* Internet Explorer 10 */
+input,
+textarea {
+	&:-ms-input-placeholder {
+		color: #758681;
+	}
+}
+
+input,
+textarea {
+	&:focus:-ms-input-placeholder {
+		color: transparent;
+	}
+}
+
+// классы для плавного скрывания/показывания элемента
+.hide {
+	opacity: 0;
+	transition: 500ms all;
+	z-index: -1 !important;
+	visibility: hidden;
+}
+
+.show {
+	opacity: 1;
+	transition: 300ms opacity;
+	z-index: 999 !important;
+	visibility: visible;
+}

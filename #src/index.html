@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	<title>ToDo List</title>
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+	<div class="todo">
+
+		<div class="todo__block">
+			<div class="todo__top">
+				<h1>Список дел</h1>
+			</div>
+
+			<div class="todo__task">
+				<input class="todo__input" type="text" placeholder="Добавить"><button class="todo__add">+</button>
+			</div>
+
+			<div class="todo__main">
+				<ul class="todo__list">
+				</ul>
+			</div>
+
+			<div class="todo__btn">
+				<button class="todo__save">Сохранить</button>
+				<button class="todo__clear">Очистить</button>
+				<button class="todo__info">Справка</button>
+			</div>
+			<div class="status hide"> </div>
+		</div>
+
+		<ul class="info hide">
+			<li>Для добавления задачи в список нужно написать текст в поле ввода и нажать Enter или значек "+"</li>
+			<li>Чтобы удалить задачу нажмите на корзину напротив этой задачи</li>
+			<li>Чтобы вычеркнуть задачу нажмите левой кнопкой мыши на саму задачу</li>
+			<li>Нажмите "Сохранить", чтобы сохранить список задач на потом</li>
+			<li>Нажмите "Очистить", чтобы полностью удалить список задач</li>
+		</ul>
+
+	</div>
+	<script src="js/index.min.js"></script>
+</body>
+
+</html>
